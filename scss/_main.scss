@@ -1,0 +1,192 @@
+// Write your styles here
+
+.main-wrapper {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  header {
+    background-image: url('../img/header_background_v1.jpg');
+    background-size: 100%;
+    height: 917px;
+  .top-wrapper{
+    display: flex;
+    justify-content: space-between;
+    .logo{
+      width: 223px;
+      height: 144px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    nav {
+      margin-top: 19px;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+    nav a:first-child{
+      margin-right: 228px;
+    }
+    nav a:nth-child(2){
+      margin-right: 220px;
+    }
+    nav a:last-child{
+      margin-right: 110px;
+    }
+  }
+  section{
+    margin-top: 255px;
+    color: white;
+    text-align: center;
+    h1{
+      @extend %uppercase;
+      font-size: 21px;
+      margin-bottom: 29px;
+      letter-spacing: 2.2px;
+    }
+    a{
+      @include button(white,$btn_color,15px 65px, 13px);
+      letter-spacing: 1px;
+      text-decoration: none;
+      @extend %uppercase;
+
+    }
+  }
+  }
+  main{
+    max-width: 960px;
+    margin: 0 auto;
+    .toolbar{
+      display: flex;
+      justify-content: flex-end;
+    }
+    input{
+      margin-top: 22px;
+      width: 177px;
+      height: 33px;
+      padding-left: 19px;
+      margin-right: 9px;
+    }
+    h1{
+      @extend %uppercase;
+      @include tite_text(22px,-21px,end);
+      letter-spacing: 3px;
+      margin-right: -3px;
+    }
+    article{
+      display: flex;
+      margin-top: 19px;
+      background-color: #EFEFEF;
+      padding: 10px;
+      img{
+        margin-right: 10px;
+        width: 283px;
+      }
+      .post-description{
+        color: #E90303;
+        margin-bottom: 11px;
+        margin-top: 10px;
+        font-size: 13px;
+      }
+      h3{
+
+        @extend %uppercase;
+        color: $about_title--color;
+        margin-top: -2px;
+        margin-left: 0px;
+        letter-spacing: 1.2px;
+        margin-bottom: -10px;
+        line-height: 1;
+        font-size: 17px;
+      }
+      p{
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: -0.2px;
+      }
+      button{
+        @include button(white,$btn_color,12px 75px, 13px);
+        @extend %uppercase;
+        border: none;
+        margin-left: 67.7%;
+        margin-top: 2px;
+      }
+    }
+    .about{
+      margin-top: 62px;
+      padding: 0 16px;
+      img{
+        width: 100%;
+      }
+      h1{
+        @include tite_text(22px,-21px,end);
+        letter-spacing: 1.8px;
+      }
+      p{
+        margin-top: 22px;
+        line-height: 23px;
+        letter-spacing: -0.2px;
+      }
+    }
+    .contact-form{
+      margin-top: 66px;
+      h1{
+        letter-spacing: 2px;
+      }
+      h4{
+        text-align: end;
+        @extend %uppercase;
+        margin-bottom: 11px;
+        letter-spacing: -0.2px;
+      }
+      .flex{
+        display: flex;
+        justify-content: space-between;
+        .form{
+          width: 49.6%;
+          p{
+            text-align: end;
+            margin-bottom: 3px;
+            letter-spacing: 1px;
+          }
+          input{
+            margin-top: 1px;
+            width: 94%;
+            height: 41px;
+          }
+
+        }
+      }
+      .area{
+        margin-top: 21px;
+        p{
+          text-align: end;
+          margin-bottom: 2px;
+        }
+        textarea{
+          width: 99.4%;
+          height: 115px;
+        }
+
+      }
+      .about_btn{
+        @include button(white,$btn_color,12px 82px, 13px);
+        @extend %uppercase;
+        border: none;
+        margin-left: 79%;
+        margin-top: 15px;
+      }
+    }
+  }
+  footer{
+    margin-top: 12px;
+    font-size: 11px;
+    padding-left: 9px;
+    letter-spacing: 0.2px;
+  }
+}
